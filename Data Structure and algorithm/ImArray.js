@@ -41,5 +41,7 @@ newArray.push('izhar');
 newArray.push('ahmed');
 newArray.push('shery');
 
-newArray.delete(0)
-console.log(newArray);
+console.log(newArray.get(1));
+
+
+
