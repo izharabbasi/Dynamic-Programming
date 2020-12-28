@@ -15,7 +15,6 @@ function sortedArray(array1,array2) {
 
     //merged Array
     while(arrayItem1 || arrayItem2) {
-        console.log(arrayItem1, arrayItem2)
         if(!arrayItem2 || arrayItem1 < arrayItem2) {
             mergedArray.push(arrayItem1);
             arrayItem1 = array1[i];
