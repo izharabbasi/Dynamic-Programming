@@ -152,18 +152,37 @@
 
 //Excercise No 14
 
-function random(){
-    return Math.floor(Math.random() * 16).toString(16);
-}
+// function random(){
+//     return Math.floor(Math.random() * 16).toString(16);
+// }
 
-function hexaDecimal(){
-    const randomNumbers = random().split('');
-    const newArray = [];
-    for (let i = randomNumbers.length; i >=6 ; i++) {
-        console.log(i);
+// function hexaDecimal(){
+//     const randomNumbers = random().split('');
+//     const newArray = [];
+//     for (let i = randomNumbers.length; i >=6 ; i++) {
+//         console.log(i);
         
-    }
-    return newArray
+//     }
+//     return newArray
+// }
+
+// console.log(hexaDecimal());
+
+//Excercise No 15
+
+
+// function sortStr(str){
+//     const newStr = str.split('')
+//     const arrStr = newStr.sort();
+//     return arrStr.join('')
+// }
+
+// console.log(sortStr("webmaster"));
+
+//Excercise No 16
+
+function countVowels(str) {
+    return str.match(/[aeiou]/gi).length;
 }
 
-console.log(hexaDecimal());
+console.log(countVowels('saxxcxceasjxs'));
