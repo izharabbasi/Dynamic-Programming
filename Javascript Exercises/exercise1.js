@@ -105,13 +105,48 @@
 
 //Excercise No 10
 
-function lEvenNum(arr) {
-  const lNum = arr.filter((ar) => {
-    if (ar % 2 === 0) {
-      return ar;
-    }
-  });
-  return Math.max(...lNum)
+// function lEvenNum(arr) {
+//   const lNum = arr.filter((ar) => {
+//     if (ar % 2 === 0) {
+//       return ar;
+//     }
+//   });
+//   return Math.max(...lNum)
+// }
+
+// console.log(lEvenNum([1, 2, 3, 4, 5,10,99,100]));
+
+
+//Excercise No 11
+
+// function replace(str){
+//     return str.replace(/[0-9]/ , "$")
+// }
+
+// console.log(replace("1helo!"));
+// console.log(replace("hel1o!"));
+
+
+//Excercise No 12
+
+// function leapYear(year){
+//     if(year % 4 === 0 ){
+//         return `${year} is a leap year`
+//     }
+//     return `${year} is not a leap year`
+// }
+
+// console.log(leapYear(2016));
+
+//Excercise No 13
+
+const obj1 = {a:1,b:2,c:5}
+const obj2 = {a:1,b:2,c:5}
+
+
+function checkObj(obj1, obj2){
+    return Object.keys(obj1).every(key => obj2[key])
 }
 
-console.log(lEvenNum([1, 2, 3, 4, 5,10,99,100]));
+console.log(checkObj(obj1, obj2));
+
