@@ -140,13 +140,30 @@
 
 //Excercise No 13
 
-const obj1 = {a:1,b:2,c:5}
-const obj2 = {a:1,b:2,c:5}
+// const obj1 = {a:1,b:2,c:5}
+// const obj2 = {a:1,b:2,c:5}
 
 
-function checkObj(obj1, obj2){
-    return Object.keys(obj1).every(key => obj2[key])
+// function checkObj(obj1, obj2){
+//     return Object.keys(obj1).every(key => obj2[key])
+// }
+
+// console.log(checkObj(obj1, obj2));
+
+//Excercise No 14
+
+function random(){
+    return Math.floor(Math.random() * 16).toString(16);
 }
 
-console.log(checkObj(obj1, obj2));
+function hexaDecimal(){
+    const randomNumbers = random().split('');
+    const newArray = [];
+    for (let i = randomNumbers.length; i >=6 ; i++) {
+        console.log(i);
+        
+    }
+    return newArray
+}
 
+console.log(hexaDecimal());
