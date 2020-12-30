@@ -181,8 +181,23 @@
 
 //Excercise No 16
 
-function countVowels(str) {
-    return str.match(/[aeiou]/gi).length;
-}
+// function countVowels(str) {
+//     return str.match(/[aeiou]/gi).length;
+// }
 
-console.log(countVowels('saxxcxceasjxs'));
+// console.log(countVowels('sAxxcxceasjxs'));
+
+//Excercise No 17
+
+// function notRepeated(str){
+//     str.split('')
+//         .filter((item, index, array) => 
+//             array.filter(arrayitem => arrayitem === item).length === 1
+//     )
+    
+
+
+// }
+
+// console.log(notRepeated('asaxmsdasdeddvd'));
+
