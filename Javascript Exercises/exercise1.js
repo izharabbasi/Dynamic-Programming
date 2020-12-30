@@ -92,13 +92,26 @@
 
 //Excercise No 9
 
-function sorted(arr) {
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i + 1] < arr[i]) {
-      return "Please Sort Array";
+// function sorted(arr) {
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i + 1] < arr[i]) {
+//       return "Please Sort Array";
+//     }
+//   }
+//   return "Sort Array";
+// }
+
+// console.log(sorted([2, 3, 454, 6, 78, 9]));
+
+//Excercise No 10
+
+function lEvenNum(arr) {
+  const lNum = arr.filter((ar) => {
+    if (ar % 2 === 0) {
+      return ar;
     }
-  }
-  return "Sort Array";
+  });
+  return Math.max(...lNum)
 }
 
-console.log(sorted([2, 3, 454, 6, 78, 9]));
+console.log(lEvenNum([1, 2, 3, 4, 5,10,99,100]));
