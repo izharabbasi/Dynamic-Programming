@@ -29,9 +29,20 @@ const people = [
 
 
 
-const fullName = [];
-people.forEach(person => {
-    return fullName.push(person.firstName + " " + person.lastName)
-})
+// const fullName = [];
+// people.forEach(person => {
+//     return fullName.push(person.firstName + " " + person.lastName)
+// })
 
-console.log(fullName);
+// console.log(fullName);
+
+// const sorted = [];
+
+// people.forEach(person => {
+//     let youngest = person.DOB;
+//     let getYear = Number(youngest.slice(6));
+//     return sorted.push(getYear);
+// })
+
+// console.log(sorted.sort((a,b) => b-a));
+
