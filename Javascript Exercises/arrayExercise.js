@@ -20,9 +20,18 @@ const people = [
 // },0)
 // console.log(totalSalrey);
 
-const old = people.filter(person => {
-    let above30 = new Date().getFullYear() -  new Date(person.DOB).getFullYear() > 30;
-    return above30;
+// const old = people.filter(person => {
+//     let above30 = new Date().getFullYear() -  new Date(person.DOB).getFullYear() > 30;
+//     return above30;
+// })
+
+// console.log(old);
+
+
+
+const fullName = [];
+people.forEach(person => {
+    return fullName.push(person.firstName + " " + person.lastName)
 })
 
-console.log(old);
+console.log(fullName);
