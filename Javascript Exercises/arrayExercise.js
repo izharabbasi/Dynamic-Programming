@@ -2,7 +2,7 @@ const people = [
     { firstName: 'Sam', lastName: 'Hughes', DOB: '07/07/1978', department: 'Development', salary: '45000' },
     { firstName: 'Terri', lastName: 'Bishop', DOB: '02/04/1989', department: 'Development', salary: '35000' },
     { firstName: 'Jar', lastName: 'Burke', DOB: '11/01/1985', department: 'Marketing', salary: '38000' },
-    { firstName: 'Julio', lastName: 'Miller', DOB: '12/07/1991', department: 'Sales', salary: '40000' },
+    { firstName: 'Julio', lastName: 'Miller', DOB: '12/07/1999', department: 'Sales', salary: '40000' },
     { firstName: 'Chester', lastName: 'Flores', DOB: '03/15/1988', department: 'Development', salary: '41000' },
     { firstName: 'Madison', lastName: 'Marshall', DOB: '09/22/1980', department: 'Sales', salary: '32000' },
     { firstName: 'Ava', lastName: 'Pena', DOB: '11/02/1986', department: 'Development', salary: '38000' },
@@ -13,18 +13,16 @@ const people = [
     { firstName: 'Aaron', lastName: 'Garrett', DOB: '09/04/1985', department: 'Development', salary: '39000' },
 ];
 
+// const totalSalrey = people.reduce((acc , person) => {
+//     let average = acc + parseInt(person.salary)/ people.length;
+//     return Math.floor(average);
 
+// },0)
+// console.log(totalSalrey);
 
-// for (let i = 0; i < people.length; i++) {
-//     var salary = people[i].salary;
-//     var totalSal = Number(salary);
-//     console.log(totalSal);    
-// }
+const old = people.filter(person => {
+    let above30 = new Date().getFullYear() -  new Date(person.DOB).getFullYear() > 30;
+    return above30;
+})
 
-
-const totalSalrey = people.reduce((acc , person) => {
-    let average = acc + parseInt(person.salary)/ people.length;
-    return Math.floor(average);
-
-},0)
-console.log(totalSalrey);
+console.log(old);
