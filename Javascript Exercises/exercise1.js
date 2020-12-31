@@ -201,14 +201,14 @@
 
 // console.log(notRepeated('asaxmsdasdeddvd'));
 
-const reverse = function(x) {
-    const arr = x.split('');
+// const reverse = function(x) {
+//     const arr = x.split('');
     
-    const newArray = [];
-    for(let i = 0 ; i < arr.length; i++){
-        newArray.push(arr[i])
-    }
-    return newArray.reverse().join('');
-};
+//     const newArray = [];
+//     for(let i = 0 ; i < arr.length; i++){
+//         newArray.push(arr[i])
+//     }
+//     return newArray.reverse().join('');
+// };
 
-console.log(reverse("123"));
+// console.log(reverse("123"));
