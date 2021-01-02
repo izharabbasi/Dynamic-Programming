@@ -55,16 +55,17 @@
 function recurringNumber (arr){
     // Solution with array
 
-    // for(let i =0; i < arr.length; i++){
-    //     for(let j = i + 1 ; j < arr.length; j++){
-    //         if(arr[i] === arr[j] ){
-    //             return arr[i];
-    //         }       
-    //     }
-    // }
-    // return arr
+    for(let i =0; i < arr.length; i++){
+        for(let j = i + 1 ; j < arr.length; j++){
+            if(arr[i] === arr[j] ){
+                return arr[i];
+            }       
+        }
+    }
+    return arr
 
     // Solution with Objects
+
     let map = {};
     for (let i =0; i< arr.length; i++){
         if(map[arr[i]] !== undefined){
