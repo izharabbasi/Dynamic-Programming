@@ -49,15 +49,23 @@ const comments = [
 
 // console.log(digitize(35231));
 
-var summation = function (num) {
-    // Code here
-    let total = 0;
-    for(let i=0; i <= num; i++){
-        total += i
-    }
-    return total
+// var summation = function (num) {
+//     // Code here
+//     let total = 0;
+//     for(let i=0; i <= num; i++){
+//         total += i
+//     }
+//     return total
 
+// }
+
+// console.log(summation(8));
+function abbrevName(name){
+    // code away
+    var nameArray = name.split(" ");
+    console.log(nameArray)
+    return (nameArray[0][0] + "." + nameArray[1][0]).toUpperCase();   
+    
 }
 
-console.log(summation(8));
-
+console.log(abbrevName("Sam Harris"));
