@@ -60,12 +60,27 @@ const comments = [
 // }
 
 // console.log(summation(8));
-function abbrevName(name){
-    // code away
-    var nameArray = name.split(" ");
-    console.log(nameArray)
-    return (nameArray[0][0] + "." + nameArray[1][0]).toUpperCase();   
+// function abbrevName(name){
+//     // code away
+//     var nameArray = name.split(" ");
+//     console.log(nameArray)
+//     return (nameArray[0][0] + "." + nameArray[1][0]).toUpperCase();   
     
-}
+// }
 
-console.log(abbrevName("Sam Harris"));
+// console.log(abbrevName("Sam Harris"));
+
+function getMiddle(string) {
+    var middleIndex = string.length / 2;
+    if (string.length % 2 == 0) {  
+        let result = string.slice(middleIndex - 1, middleIndex + 1);
+        console.log(result);
+    } 
+    else {
+      return string.charAt(middleIndex);
+    }
+  }
+
+console.log(getMiddle('test'));
+// console.log(getMiddle("test"));
+// console.log(getMiddle("testing"));
