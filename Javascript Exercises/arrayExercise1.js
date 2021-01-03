@@ -13,36 +13,36 @@ const people = [
     { firstName: 'Aaron', lastName: 'Garrett', DOB: '09/04/1985', department: 'Development', salary: '39000' },
 ];
 
-// const totalSalrey = people.reduce((acc , person) => {
-//     let average = acc + parseInt(person.salary)/ people.length;
-//     return Math.floor(average);
+const totalSalrey = people.reduce((acc , person) => {
+    let average = acc + parseInt(person.salary)/ people.length;
+    return Math.floor(average);
 
-// },0)
-// console.log(totalSalrey);
+},0)
+console.log(totalSalrey);
 
-// const old = people.filter(person => {
-//     let above30 = new Date().getFullYear() -  new Date(person.DOB).getFullYear() > 30;
-//     return above30;
-// })
+const old = people.filter(person => {
+    let above30 = new Date().getFullYear() -  new Date(person.DOB).getFullYear() > 30;
+    return above30;
+})
 
-// console.log(old);
+console.log(old);
 
 
 
-// const fullName = [];
-// people.forEach(person => {
-//     return fullName.push(person.firstName + " " + person.lastName)
-// })
+const fullName = [];
+people.forEach(person => {
+    return fullName.push(person.firstName + " " + person.lastName)
+})
 
-// console.log(fullName);
+console.log(fullName);
 
-// const sorted = [];
+const sorted = [];
 
-// people.forEach(person => {
-//     let youngest = person.DOB;
-//     let getYear = Number(youngest.slice(6));
-//     return sorted.push(getYear);
-// })
+people.forEach(person => {
+    let youngest = person.DOB;
+    let getYear = Number(youngest.slice(6));
+    return sorted.push(getYear);
+})
 
-// console.log(sorted.sort((a,b) => b-a));
+console.log(sorted.sort((a,b) => b-a));
 
