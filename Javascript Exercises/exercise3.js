@@ -24,18 +24,27 @@ const comments = [
     { userId: '6ee904be-e3b0-41c9-b7a2-5a0233c38e4c', text: 'Great stuff!' },
 ];
 
-// const madi1 =users.find(user => user.firstName === "Madison" && user.lastName === "Marshall");
+// // const madi1 =users.find(user => user.firstName === "Madison" && user.lastName === "Marshall");
 
-// console.log(madi1);
+// // console.log(madi1);
 
-// const comment = users.find(user => user.id === comments[0].userId);
+// // const comment = users.find(user => user.id === comments[0].userId);
 
-// console.log(comment);
+// // console.log(comment);
 
-// const pComment = users.find(user => user.id === comments.find(com => com.text==="OK great thanks").userId);
+// // const pComment = users.find(user => user.id === comments.find(com => com.text==="OK great thanks").userId);
 
-// console.log(pComment);
+// // console.log(pComment);
 
-const isCommnet = users.filter(user => comments.find(comment => comment.userId === user.id));
+// const isCommnet = users.filter(user => comments.find(comment => comment.userId === user.id));
 
-console.log(isCommnet);
+// console.log(isCommnet);
+
+function digitize(n) {
+    //code here
+    let ascNumber = n.toString().split('').reverse();
+    let numberarray = ascNumber.map(num => Number(num));
+    return numberarray
+}
+
+console.log(digitize(35231));
