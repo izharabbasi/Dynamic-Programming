@@ -40,11 +40,24 @@ const comments = [
 
 // console.log(isCommnet);
 
-function digitize(n) {
-    //code here
-    let ascNumber = n.toString().split('').reverse();
-    let numberarray = ascNumber.map(num => Number(num));
-    return numberarray
+// function digitize(n) {
+//     //code here
+//     let ascNumber = n.toString().split('').reverse();
+//     let numberarray = ascNumber.map(num => Number(num));
+//     return numberarray
+// }
+
+// console.log(digitize(35231));
+
+var summation = function (num) {
+    // Code here
+    let total = 0;
+    for(let i=0; i <= num; i++){
+        total += i
+    }
+    return total
+
 }
 
-console.log(digitize(35231));
+console.log(summation(8));
+
