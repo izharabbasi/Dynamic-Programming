@@ -70,17 +70,32 @@ const comments = [
 
 // console.log(abbrevName("Sam Harris"));
 
-function getMiddle(string) {
-    var middleIndex = string.length / 2;
-    if (string.length % 2 == 0) {  
-        let result = string.slice(middleIndex - 1, middleIndex + 1);
-        console.log(result);
-    } 
-    else {
-      return string.charAt(middleIndex);
-    }
-  }
+// function getMiddle(string) {
+//     var middleIndex = string.length / 2;
+//     if (string.length % 2 == 0) {  
+//         let result = string.slice(middleIndex - 1, middleIndex + 1);
+//         console.log(result);
+//     } 
+//     else {
+//       return string.charAt(middleIndex);
+//     }
+//   }
 
-console.log(getMiddle('test'));
+// console.log(getMiddle('test'));
 // console.log(getMiddle("test"));
 // console.log(getMiddle("testing"));
+
+function squareDigits(num){
+    //may the code be with you
+    let toSring = num.toString().split('');
+    const newArray = []
+    for(let i = 0 ; i < toSring.length; i++ ){
+        let sqaure = Math.pow(toSring[i] , 2);
+        newArray.push(sqaure)
+    }
+
+    let result =  newArray.join('');
+    return Number(result)
+}
+
+console.log(squareDigits(9119));
