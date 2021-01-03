@@ -20,26 +20,26 @@ const orders = [
     ]},
 ];
 
-// orders.filter(order => {
-//     let cust = order.customerId==='234' && !order.delivered;
-//     return cust
-// })
+orders.filter(order => {
+    let cust = order.customerId==='234' && !order.delivered;
+    return cust
+})
 
-// const total = orders.map(order => {
-//     return ({...order, orderTotal : order.items.reduce((acc, item) => {
-//         return acc + item.price
-//     } , 0)})
-// })
+const total = orders.map(order => {
+    return ({...order, orderTotal : order.items.reduce((acc, item) => {
+        return acc + item.price
+    } , 0)})
+})
 
-// console.log(total);
+console.log(total);
 
-// const deliverd = orders.filter(order => {
-//     let cust = order.delivered === true;
-//     console.log(cust); 
-// })
+const deliverd = orders.filter(order => {
+    let cust = order.delivered === true;
+    console.log(cust); 
+})
 
-// console.log(deliverd);
+console.log(deliverd);
 
-// const check = orders.every(order => order.delivered)
+const check = orders.every(order => order.delivered)
 
-// console.log(check);
+console.log(check);
