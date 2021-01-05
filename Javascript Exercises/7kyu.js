@@ -30,15 +30,23 @@
 // console.log(filter_list([1,2,'a','b']));
 // console.log(filter_list([1,2,'aasf','1','123',123]));
 
-function findShort(s){
-    var arr = s.split(' ');
-    var smallest = arr[0];
-    for (var i = 0; i < arr.length; i++) {
-      if(arr[i].length < smallest.length){
-        smallest = arr[i];
-      }
-    }
-    return smallest.length;
+// function findShort(s){
+//     var arr = s.split(' ');
+//     var smallest = arr[0];
+//     for (var i = 0; i < arr.length; i++) {
+//       if(arr[i].length < smallest.length){
+//         smallest = arr[i];
+//       }
+//     }
+//     return smallest.length;
+// }
+
+// console.log(findShort("bitcoin take over the world maybe who knows perhaps"));
+
+function sumTwoSmallestNumbers(numbers) {  
+    numbers = numbers.sort(function(a, b){return a - b; });
+    return numbers[0] + numbers[1];
+
 }
 
-console.log(findShort("bitcoin take over the world maybe who knows perhaps"));
+console.log(sumTwoSmallestNumbers([5, 8, 12, 19, 22]));
