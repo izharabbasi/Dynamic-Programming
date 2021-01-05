@@ -16,16 +16,26 @@
 
 // console.log(descendingOrder(123456789));
 
-function filter_list(l) {
-    // Return a new array with the strings filtered out
-    const newArray =[];
-    for(let i =0; i < l.length; i++){
-        if(typeof(l[i]) === 'number'){
-            newArray.push(l[i])
-        }
-    }
-    return newArray;
+// function filter_list(l) {
+//     // Return a new array with the strings filtered out
+//     const newArray =[];
+//     for(let i =0; i < l.length; i++){
+//         if(typeof(l[i]) === 'number'){
+//             newArray.push(l[i])
+//         }
+//     }
+//     return newArray;
+// }
+
+// console.log(filter_list([1,2,'a','b']));
+// console.log(filter_list([1,2,'aasf','1','123',123]));
+
+function findShort(s){
+    let str = s.split(' ').
+    reduce((prev ,next) => {
+        return next.length < prev.length ? next : prev
+    })
+    return str.length
 }
 
-console.log(filter_list([1,2,'a','b']));
-console.log(filter_list([1,2,'aasf','1','123',123]));
+console.log(findShort("bitcoin take over the world maybe who knows perhaps"));
