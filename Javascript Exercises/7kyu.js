@@ -68,15 +68,21 @@
 
 // console.log(XO("xxOo"));
 
-function friend(friends){
-    //your code here
-    const newArray = [];
-    for(let i=0 ; i< friends.length; i++){
-        if(friends[i].length === 4){
-            newArray.push(friends[i])
-        }
-    }
-    return newArray;
+// function friend(friends){
+//     //your code here
+//     const newArray = [];
+//     for(let i=0 ; i< friends.length; i++){
+//         if(friends[i].length === 4){
+//             newArray.push(friends[i])
+//         }
+//     }
+//     return newArray;
+// }
+
+// console.log(friend(["Ryan", "Kieran", "Mark"]));
+
+function solution(str, ending){
+    // TODO: complete
 }
 
-console.log(friend(["Ryan", "Kieran", "Mark"]));
+console.log(solution('abcde', 'cde'));
