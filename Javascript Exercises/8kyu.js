@@ -75,18 +75,25 @@
 // console.log(getPlanetName(3));
 
 
-function sumArray(array) {
-    const newArray = [];
-    if(array === null || array.length <= 1){
-        return array
-    }
-    let max = Math.max(...array);
-    let min = Math.min(...array);
-    let sum = 0;
-    for(let i=0; i < array.length; i++){
-        sum += array[i]
-    }
-    return sum -max - min;
+// function sumArray(array) {
+//     if(array === null || array.length <= 1){
+//         return array
+//     }
+//     let max = Math.max(...array);
+//     let min = Math.min(...array);
+//     let sum = 0;
+//     for(let i=0; i < array.length; i++){
+//         sum += array[i]
+//     }
+//     return sum -max - min;
+// }
+
+// console.log(sumArray([ 6, 2, 1, 8, 10 ]));
+
+function grow(x){
+    return x.reduce((acc, next) => {
+        return next * acc
+    })
 }
 
-console.log(sumArray([ 6, 2, 1, 8, 10 ]));
+console.log(grow([1, 2, 3]));
