@@ -16,21 +16,33 @@
 
 // console.log(findNeedle(haystack_3));
 
-var testData = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15];
+// var testData = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15];
 
-function countPositivesSumNegatives(input) {
-    let count = 0;
-    let newArray = input[0];
-    for(let i = 0; i < input.length; i ++){
-        if(input[i] >= 0){
-            count++
-        }
-        else if(input[i] < 0) {
-            newArray += input[i]
-        }
+// function countPositivesSumNegatives(input) {
+//     let count = 0;
+//     let newArray = input[0];
+//     for(let i = 0; i < input.length; i ++){
+//         if(input[i] >= 0){
+//             count++
+//         }
+//         else if(input[i] < 0) {
+//             newArray += input[i]
+//         }
+//     }
+//     let result = [count , newArray];
+//     return result;
+// }
+
+// console.log(countPositivesSumNegatives(testData));
+
+function areYouPlayingBanjo(name) {
+    // Implement me
+    if(name.charAt(0) === "R"){
+        return `${name} plays banjo`;
     }
-    let result = [count , newArray];
-    return result;
+
+    return `${name} does not play banjo`;
 }
 
-console.log(countPositivesSumNegatives(testData));
+console.log(areYouPlayingBanjo("Martin"));
+console.log(areYouPlayingBanjo("Rikke"));
