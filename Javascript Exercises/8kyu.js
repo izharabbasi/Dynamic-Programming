@@ -98,13 +98,27 @@
 
 // console.log(grow([1, 2, 3]));
 
-function countBy(x, n) {
-    var z = [];
-    for (i = 1; i <= n; i++) {
-        z.push(x * i);
+// function countBy(x, n) {
+//     var z = [];
+//     for (i = 1; i <= n; i++) {
+//         z.push(x * i);
+//     }
+//     return z;
+// }
+
+// console.log(countBy(1,5));
+// console.log(countBy(2,5));
+
+function simpleMultiplication(number) {
+    // your code........
+    if(number % 2 ===0){
+        return number * 8;
     }
-    return z;
+    
+    return number * 9
 }
 
-console.log(countBy(1,5));
-console.log(countBy(2,5));
+
+console.log(simpleMultiplication(2));
+console.log(simpleMultiplication(1));
+
