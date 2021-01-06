@@ -43,10 +43,18 @@
 
 // console.log(findShort("bitcoin take over the world maybe who knows perhaps"));
 
-function sumTwoSmallestNumbers(numbers) {  
-    numbers = numbers.sort(function(a, b){return a - b; });
-    return numbers[0] + numbers[1];
+// function sumTwoSmallestNumbers(numbers) {  
+//     numbers = numbers.sort(function(a, b){return a - b; });
+//     return numbers[0] + numbers[1];
 
+// }
+
+// console.log(sumTwoSmallestNumbers([5, 8, 12, 19, 22]));
+
+function longest(s1, s2) {
+    // your code
+    let str = (s1 + s2).split(' ');
+    return 
 }
 
-console.log(sumTwoSmallestNumbers([5, 8, 12, 19, 22]));
+console.log(longest("aretheyhere", "yestheyarehere"));
