@@ -109,16 +109,39 @@
 // console.log(countBy(1,5));
 // console.log(countBy(2,5));
 
-function simpleMultiplication(number) {
-    // your code........
-    if(number % 2 ===0){
-        return number * 8;
-    }
+// function simpleMultiplication(number) {
+//     // your code........
+//     if(number % 2 ===0){
+//         return number * 8;
+//     }
     
-    return number * 9
+//     return number * 9
+// }
+
+
+// console.log(simpleMultiplication(2));
+// console.log(simpleMultiplication(3));
+
+// var countSheep = function (num){
+//     //your code here;
+//     for(let i=0; i < num; i++){
+        
+//     }
+// }
+
+
+// console.log(countSheep(3));
+
+function rentalCarCost(d) {
+    // Your solution here
+    if(d >=7 ){
+        return (40 * d) - 50
+    } else if (d >=3 || d < 7) {
+        return (d * 40) -20
+    } else {
+        return d * 40;
+    }
+
 }
 
-
-console.log(simpleMultiplication(2));
-console.log(simpleMultiplication(1));
-
+console.log(rentalCarCost(3));
