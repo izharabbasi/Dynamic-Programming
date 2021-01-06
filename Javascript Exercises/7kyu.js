@@ -4,14 +4,12 @@
 //     return Math.max.apply(null, numbers) + " " +  Math.min.apply(null, numbers)
 // }
 
-
 // console.log(highAndLow("4 5 29 54 4 0 -214 542 -64 1 -3 6 -6"));
 
 // function descendingOrder(n){
 //     let numbers = n.toString().split('');
 //     return [...numbers].sort((a,b) => b-a).join('');
 
-    
 // }
 
 // console.log(descendingOrder(123456789));
@@ -43,7 +41,7 @@
 
 // console.log(findShort("bitcoin take over the world maybe who knows perhaps"));
 
-// function sumTwoSmallestNumbers(numbers) {  
+// function sumTwoSmallestNumbers(numbers) {
 //     numbers = numbers.sort(function(a, b){return a - b; });
 //     return numbers[0] + numbers[1];
 
@@ -51,10 +49,34 @@
 
 // console.log(sumTwoSmallestNumbers([5, 8, 12, 19, 22]));
 
-function longest(s1, s2) {
-    // your code
-    let str = (s1 + s2).split(' ');
-    return 
+// function longest(words) {
+//   // your code
+//     return words.reduce((a,word) => {
+//         return Math.max(a, word.length)
+//     }, 0)
+// }
+
+// console.log(longest(["simple", "is", "better", "than", "complex"]));
+
+
+// function XO(str) {
+//     //code here
+//     let x = str.match(/x/gi);
+//     let o = str.match(/o/gi);
+//     return (x.length) === (o.length);
+// }
+
+// console.log(XO("xxOo"));
+
+function friend(friends){
+    //your code here
+    const newArray = [];
+    for(let i=0 ; i< friends.length; i++){
+        if(friends[i].length === 4){
+            newArray.push(friends[i])
+        }
+    }
+    return newArray;
 }
 
-console.log(longest("aretheyhere", "yestheyarehere"));
+console.log(friend(["Ryan", "Kieran", "Mark"]));

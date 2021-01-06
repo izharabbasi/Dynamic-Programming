@@ -1,7 +1,6 @@
 // var haystack_1 = ['3', '123124234', undefined, 'needle', 'world', 'hay', 2, '3', true, false];
 // var haystack_3 = [1,2,3,4,5,6,7,8,8,7,5,4,3,4,5,6,67,5,5,3,3,4,2,34,234,23,4,234,324,324,'needle',1,2,3,4,5,5,6,5,4,32,3,45,54];
 
-
 // function findNeedle(haystack) {
 //     // your code here
 //     let result = ''
@@ -67,13 +66,12 @@
 //       case 8:
 //         return name = 'Neptune'
 //     }
-    
+
 //   }
 
 // console.log(getPlanetName(2));
 // console.log(getPlanetName(5));
 // console.log(getPlanetName(3));
-
 
 // function sumArray(array) {
 //     if(array === null || array.length <= 1){
@@ -114,34 +112,33 @@
 //     if(number % 2 ===0){
 //         return number * 8;
 //     }
-    
+
 //     return number * 9
 // }
-
 
 // console.log(simpleMultiplication(2));
 // console.log(simpleMultiplication(3));
 
-// var countSheep = function (num){
-//     //your code here;
-//     for(let i=0; i < num; i++){
-        
+// function rentalCarCost(d) {
+//     // Your solution here
+//     if(d >=7 ){
+//         return (40 * d) - 50
+//     } else if (d >=3 || d < 7) {
+//         return (d * 40) -20
+//     } else {
+//         return d * 40;
 //     }
+
 // }
 
+// console.log(rentalCarCost(3));
+
+// var countSheep = function (num){
+//     let str = ''
+//     for(let i=1; i<= num; i++){
+//         str += `${i} sheep...`
+//     }
+//     return str;
+// }
 
 // console.log(countSheep(3));
-
-function rentalCarCost(d) {
-    // Your solution here
-    if(d >=7 ){
-        return (40 * d) - 50
-    } else if (d >=3 || d < 7) {
-        return (d * 40) -20
-    } else {
-        return d * 40;
-    }
-
-}
-
-console.log(rentalCarCost(3));
