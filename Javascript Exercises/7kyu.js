@@ -81,10 +81,18 @@
 
 // console.log(friend(["Ryan", "Kieran", "Mark"]));
 
-function solution(str, ending){
-    // TODO: complete
-    return str.endsWith(ending)
+// function solution(str, ending){
+//     // TODO: complete
+//     return str.endsWith(ending)
     
+// }
+
+// console.log(solution('abcde', 'cde'));
+
+
+function removeSmallest(numbers) {
+    const min = Math.min.apply(this, numbers);
+    return numbers.filter((num, idx, arr) => idx !== arr.indexOf(min));
 }
 
-console.log(solution('abcde', 'cde'));
+console.log(removeSmallest([5, 3, 2, 1, 4]));
