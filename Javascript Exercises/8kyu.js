@@ -90,10 +90,21 @@
 
 // console.log(sumArray([ 6, 2, 1, 8, 10 ]));
 
-function grow(x){
-    return x.reduce((acc, next) => {
-        return next * acc
-    })
+// function grow(x){
+//     return x.reduce((acc, next) => {
+//         return next * acc
+//     })
+// }
+
+// console.log(grow([1, 2, 3]));
+
+function countBy(x, n) {
+    var z = [];
+    for (i = 1; i <= n; i++) {
+        z.push(x * i);
+    }
+    return z;
 }
 
-console.log(grow([1, 2, 3]));
+console.log(countBy(1,5));
+console.log(countBy(2,5));
