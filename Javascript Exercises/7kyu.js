@@ -143,3 +143,22 @@
 
 // console.log(indexOfCapitals('CodEWaRs'))
 
+function accum(s) {
+    // your code
+    let result = '';
+    for(let i =0; i < s.length ; i++){
+        for(let j =0; j < i + 1 ; j++){
+            if(j == 0){
+                result += s[i].toUpperCase()
+            } else {
+                result += s[i].toLowerCase()
+            }
+        }
+        if(i != s.length -1){
+            result += '-'
+        }
+    }
+    return result;
+}
+
+console.log(accum("ZpglnRxqenU"));
