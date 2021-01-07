@@ -247,15 +247,23 @@
 
 // console.log(rotateToMax(786));
 
-function createArrayOfTiers(num) {
-    let stamp = String(num)
-    let tiers = []
+// function createArrayOfTiers(num) {
+//     let stamp = String(num)
+//     let tiers = []
 
-    for (let index = 0; index < stamp.length; index += 1) {
-        tiers.push(stamp.slice(0, index + 1))
-    }
-  return tiers
+//     for (let index = 0; index < stamp.length; index += 1) {
+//         tiers.push(stamp.slice(0, index + 1))
+//     }
+//   return tiers
+// }
+
+// console.log(createArrayOfTiers(420));
+
+
+function largest(n,xs){
+    // Find the n highest elements in a list
+    return xs.sort((a,b) => a -b).slice(-n)
+
 }
 
-console.log(createArrayOfTiers(420));
-
+console.log(largest(2,[10,9,8,7,6,5,4,3,2,1]));
