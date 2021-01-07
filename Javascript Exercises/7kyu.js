@@ -98,12 +98,24 @@
 // console.log(removeSmallest([5, 3, 2, 1, 4]));
 
 
-function reverseWords(str) {
-    let newStr = '';
-    for(let i= str.length -1 ; i >= 0 ; i--){
-        newStr += str[i]
+// function reverseWords(str) {
+//     let newStr = '';
+//     for(let i= str.length -1 ; i >= 0 ; i--){
+//         newStr += str[i]
+//     }
+//     return newStr.split(' ').reverse().join(' ')
+// }
+
+// console.log(reverseWords('The quick brown fox jumps over the lazy dog.'));
+
+function stray(numbers) {
+    for(let i =0; i < numbers.length ; i++){
+        for(let j = i + 1; j < numbers.length ; j++){
+            if(numbers[i] != numbers[j]){
+                return numbers[j]
+            }
+        }
     }
-    return newStr.split(' ').reverse().join(' ')
 }
 
-console.log(reverseWords('The quick brown fox jumps over the lazy dog.'));
+console.log(stray([17, 17, 3, 17, 17, 17, 17]));
