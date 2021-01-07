@@ -238,11 +238,24 @@
 
 // console.log(task('Tuesday',6,1));
 
-const rotateToMax = n => {
-    n = n.toString().split('');
-    let result = n.sort((a, b) =>  b - a).join('');
-    return Number(result)
+// const rotateToMax = n => {
+//     n = n.toString().split('');
+//     let result = n.sort((a, b) =>  b - a).join('');
+//     return Number(result)
 
+// }
+
+// console.log(rotateToMax(786));
+
+function createArrayOfTiers(num) {
+    let stamp = String(num)
+    let tiers = []
+
+    for (let index = 0; index < stamp.length; index += 1) {
+        tiers.push(stamp.slice(0, index + 1))
+    }
+  return tiers
 }
 
-console.log(rotateToMax(786));
+console.log(createArrayOfTiers(420));
+
