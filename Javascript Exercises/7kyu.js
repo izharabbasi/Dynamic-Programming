@@ -131,16 +131,15 @@
 
 // console.log(capitals('CodEWaRs'));
 
-function indexOfCapitals(word){
-    const arr = [];
-    for(let i =0; i< word.length; i++){
-        if(word[i] === word[i].toUpperCase()){
-            arr.push(i)
-        }
-    }
-    return arr;
-}
+// function indexOfCapitals(word){
+//     const arr = [];
+//     for(let i =0; i< word.length; i++){
+//         if(word[i] === word[i].toUpperCase()){
+//             arr.push(i)
+//         }
+//     }
+//     return arr;
+// }
 
-console.log(indexOfCapitals('CodEWaRs'))
-
+// console.log(indexOfCapitals('CodEWaRs'))
 
