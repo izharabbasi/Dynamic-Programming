@@ -120,13 +120,27 @@
 
 // console.log(stray([17, 17, 3, 17, 17, 17, 17]));
 
-var capitals = function (word) {
-    const arr = word.split('');
-    return arr.filter((item , index) => {
-        if(item === item.toUpperCase()){
-            return item
-        }
-    })
-};
+// var capitals = function (word) {
+//     const arr = word.split('');
+//     return arr.filter((item , index) => {
+//         if(item === item.toUpperCase()){
+//             return item
+//         }
+//     })
+// };
 
-console.log(capitals('CodEWaRs'));
+// console.log(capitals('CodEWaRs'));
+
+function indexOfCapitals(word){
+    const arr = [];
+    for(let i =0; i< word.length; i++){
+        if(word[i] === word[i].toUpperCase()){
+            arr.push(i)
+        }
+    }
+    return arr;
+}
+
+console.log(indexOfCapitals('CodEWaRs'))
+
+
