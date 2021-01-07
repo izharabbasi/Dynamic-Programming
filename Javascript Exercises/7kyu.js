@@ -90,9 +90,20 @@
 // console.log(solution('abcde', 'cde'));
 
 
-function removeSmallest(numbers) {
-    const min = Math.min.apply(this, numbers);
-    return numbers.filter((num, idx, arr) => idx !== arr.indexOf(min));
+// function removeSmallest(numbers) {
+//     const min = Math.min.apply(this, numbers);
+//     return numbers.filter((num, idx, arr) => idx !== arr.indexOf(min));
+// }
+
+// console.log(removeSmallest([5, 3, 2, 1, 4]));
+
+
+function reverseWords(str) {
+    let newStr = '';
+    for(let i= str.length -1 ; i >= 0 ; i--){
+        newStr += str[i]
+    }
+    return newStr.split(' ').reverse().join(' ')
 }
 
-console.log(removeSmallest([5, 3, 2, 1, 4]));
+console.log(reverseWords('The quick brown fox jumps over the lazy dog.'));
