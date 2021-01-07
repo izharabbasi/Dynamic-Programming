@@ -178,22 +178,33 @@
 // console.log(generatePairs(2));
 
 
-function XO(str) {
-    let xCount = 0;
-    let oCount = 0;
+// function XO(str) {
+//     let xCount = 0;
+//     let oCount = 0;
 
-    for(let i=0 ; i<str.length; i++){
-        if(str[i].match(/x/i)){
-            xCount++;
-        } else if(str[i].match(/o/i)){
-            oCount++
-        }
+//     for(let i=0 ; i<str.length; i++){
+//         if(str[i].match(/x/i)){
+//             xCount++;
+//         } else if(str[i].match(/o/i)){
+//             oCount++
+//         }
+//     }
+//     if (xCount === oCount){
+//         return true
+//     }
+//     return false;
+// }
+
+// console.log(XO("xxOo"));
+// console.log(XO("xxxm"));
+
+function divisibleByLast(n) {
+    n = String(n);
+    const result = [];
+    for(let i = 0; i<n.length; i++){
+            result.push(n[i] % n[i-1] ===0)
     }
-    if (xCount === oCount){
-        return true
-    }
-    return false;
+    return result
 }
 
-console.log(XO("xxOo"));
-console.log(XO("xxxm"));
+console.log(divisibleByLast(73312));
