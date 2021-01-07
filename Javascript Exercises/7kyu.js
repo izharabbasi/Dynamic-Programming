@@ -108,14 +108,25 @@
 
 // console.log(reverseWords('The quick brown fox jumps over the lazy dog.'));
 
-function stray(numbers) {
-    for(let i =0; i < numbers.length ; i++){
-        for(let j = i + 1; j < numbers.length ; j++){
-            if(numbers[i] != numbers[j]){
-                return numbers[j]
-            }
-        }
-    }
-}
+// function stray(numbers) {
+//     for(let i =0; i < numbers.length ; i++){
+//         for(let j = i + 1; j < numbers.length ; j++){
+//             if(numbers[i] != numbers[j]){
+//                 return numbers[j]
+//             }
+//         }
+//     }
+// }
 
-console.log(stray([17, 17, 3, 17, 17, 17, 17]));
+// console.log(stray([17, 17, 3, 17, 17, 17, 17]));
+
+var capitals = function (word) {
+    const arr = word.split('');
+    return arr.filter((item , index) => {
+        if(item === item.toUpperCase()){
+            return item
+        }
+    })
+};
+
+console.log(capitals('CodEWaRs'));
