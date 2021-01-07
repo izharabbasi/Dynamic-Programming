@@ -216,24 +216,33 @@
 
 // console.log(getProductId("http://www.exampleshop.com/fancy-coffee-cup-p-90764-12052019.html"));
 
-function task(w, n, c) {
-    const cost = c * n;
-    if(w === 'Monday'){
-        return `It is ${w} today, James, you have to work, you must spray ${n} trees and you need ${cost} dollars to buy liquid`
-    }
-    else if(w === 'Tuesday'){
-        return `It is ${w} today, Jhon, you have to work, you must spray ${n} trees and you need ${cost} dollars to buy liquid`
-    }
-    else if(w === 'Wednesday'){
-        return `It is ${w} today, Robert, you have to work, you must spray ${n} trees and you need ${cost} dollars to buy liquid`
-    }
-    else if(w === 'Thursday'){
-        return `It is ${w} today, Michael, you have to work, you must spray ${n} trees and you need ${cost} dollars to buy liquid`
-    }
-    else if(w === 'Friday'){
-        return `It is ${w} today, William, you have to work, you must spray ${n} trees and you need ${cost} dollars to buy liquid`
-    }
+// function task(w, n, c) {
+//     const cost = c * n;
+//     if(w === 'Monday'){
+//         return `It is ${w} today, James, you have to work, you must spray ${n} trees and you need ${cost} dollars to buy liquid`
+//     }
+//     else if(w === 'Tuesday'){
+//         return `It is ${w} today, Jhon, you have to work, you must spray ${n} trees and you need ${cost} dollars to buy liquid`
+//     }
+//     else if(w === 'Wednesday'){
+//         return `It is ${w} today, Robert, you have to work, you must spray ${n} trees and you need ${cost} dollars to buy liquid`
+//     }
+//     else if(w === 'Thursday'){
+//         return `It is ${w} today, Michael, you have to work, you must spray ${n} trees and you need ${cost} dollars to buy liquid`
+//     }
+//     else if(w === 'Friday'){
+//         return `It is ${w} today, William, you have to work, you must spray ${n} trees and you need ${cost} dollars to buy liquid`
+//     }
     
+// }
+
+// console.log(task('Tuesday',6,1));
+
+const rotateToMax = n => {
+    n = n.toString().split('');
+    let result = n.sort((a, b) =>  b - a).join('');
+    return Number(result)
+
 }
 
-console.log(task('Tuesday',6,1));
+console.log(rotateToMax(786));
