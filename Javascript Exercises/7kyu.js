@@ -198,13 +198,42 @@
 // console.log(XO("xxOo"));
 // console.log(XO("xxxm"));
 
-function divisibleByLast(n) {
-    n = String(n);
-    const result = [];
-    for(let i = 0; i<n.length; i++){
-            result.push(n[i] % n[i-1] ===0)
+// function divisibleByLast(n) {
+//     n = String(n);
+//     const result = [];
+//     for(let i = 0; i<n.length; i++){
+//             result.push(n[i] % n[i-1] ===0)
+//     }
+//     return result
+// }
+
+// console.log(divisibleByLast(73312));
+
+// function getProductId(url){
+//     //your code here
+//     return url.split("-").reverse()[1];
+// }
+
+// console.log(getProductId("http://www.exampleshop.com/fancy-coffee-cup-p-90764-12052019.html"));
+
+function task(w, n, c) {
+    const cost = c * n;
+    if(w === 'Monday'){
+        return `It is ${w} today, James, you have to work, you must spray ${n} trees and you need ${cost} dollars to buy liquid`
     }
-    return result
+    else if(w === 'Tuesday'){
+        return `It is ${w} today, Jhon, you have to work, you must spray ${n} trees and you need ${cost} dollars to buy liquid`
+    }
+    else if(w === 'Wednesday'){
+        return `It is ${w} today, Robert, you have to work, you must spray ${n} trees and you need ${cost} dollars to buy liquid`
+    }
+    else if(w === 'Thursday'){
+        return `It is ${w} today, Michael, you have to work, you must spray ${n} trees and you need ${cost} dollars to buy liquid`
+    }
+    else if(w === 'Friday'){
+        return `It is ${w} today, William, you have to work, you must spray ${n} trees and you need ${cost} dollars to buy liquid`
+    }
+    
 }
 
-console.log(divisibleByLast(73312));
+console.log(task('Tuesday',6,1));
