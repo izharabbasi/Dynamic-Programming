@@ -143,22 +143,57 @@
 
 // console.log(indexOfCapitals('CodEWaRs'))
 
-function accum(s) {
-    // your code
-    let result = '';
-    for(let i =0; i < s.length ; i++){
-        for(let j =0; j < i + 1 ; j++){
-            if(j == 0){
-                result += s[i].toUpperCase()
-            } else {
-                result += s[i].toLowerCase()
-            }
-        }
-        if(i != s.length -1){
-            result += '-'
+// function accum(s) {
+//     // your code
+//     let result = '';
+//     for(let i =0; i < s.length ; i++){
+//         for(let j =0; j < i + 1 ; j++){
+//             if(j == 0){
+//                 result += s[i].toUpperCase()
+//             } else {
+//                 result += s[i].toLowerCase()
+//             }
+//         }
+//         if(i != s.length -1){
+//             result += '-'
+//         }
+//     }
+//     return result;
+// }
+
+
+
+// console.log(accum("ZpglnRxqenU"));
+
+// function generatePairs(n) {
+//     const newArray = [];
+//     for(let i =0; i <=n ; i++){
+//         for(let j = i; j <=n ; j++){
+//             newArray.push([i,j])
+//         }
+//     }
+//     return newArray;
+// }
+
+// console.log(generatePairs(2));
+
+
+function XO(str) {
+    let xCount = 0;
+    let oCount = 0;
+
+    for(let i=0 ; i<str.length; i++){
+        if(str[i].match(/x/i)){
+            xCount++;
+        } else if(str[i].match(/o/i)){
+            oCount++
         }
     }
-    return result;
+    if (xCount === oCount){
+        return true
+    }
+    return false;
 }
 
-console.log(accum("ZpglnRxqenU"));
+console.log(XO("xxOo"));
+console.log(XO("xxxm"));
