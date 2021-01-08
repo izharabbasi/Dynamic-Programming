@@ -315,13 +315,26 @@
     
 // };
 
-function divisibleByLast(n) {
+// function divisibleByLast(n) {
+//     const newArray = [];
+//     n = n.toString().split('')
+//     for(let i = 0; i < n.length ; i++){
+//         newArray.push((n[i] % n[i-1] === 0))
+//     }
+//     return newArray;
+// }
+
+// console.log(divisibleByLast(73312));
+
+
+function uniqueNumbers(numbersArray) {
     const newArray = [];
-    n = n.toString().split('')
-    for(let i = 0; i < n.length ; i++){
-        newArray.push((n[i] % n[i-1] === 0))
+    for(let i =0 ; i<numbersArray.length; i++){
+        if(!newArray.includes(numbersArray[i])){
+            newArray.push(numbersArray[i]);
+        }
     }
     return newArray;
 }
 
-console.log(divisibleByLast(73312));
+console.log(uniqueNumbers([1,2,3,1]));
