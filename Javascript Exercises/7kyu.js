@@ -260,10 +260,59 @@
 // console.log(createArrayOfTiers(420));
 
 
-function largest(n,xs){
-    // Find the n highest elements in a list
-    return xs.sort((a,b) => a -b).slice(-n)
+// function largest(n,xs){
+//     // Find the n highest elements in a list
+//     return xs.sort((a,b) => a -b).slice(-n)
+
+// }
+
+// console.log(largest(2,[10,9,8,7,6,5,4,3,2,1]));
+
+// function uniqueNumbers(numbersArray) {
+//     //you must return unique numbers array
+//     const newArray = [];
+//     for(let i =0; i< numbersArray.length; i++){
+//         if(!newArray.includes(numbersArray[i])){
+//             newArray.push(numbersArray[i])
+//         }
+//     }
+//     return newArray;
+// }
+
+// console.log(uniqueNumbers([1,2,3,1]));
+
+function fizzBuzz(n) {
+    // Write your code here
+    const newArr = []
+    for(let i = 1; i<=n ; i++){
+        if( i % 3 === 0){
+            newArr.push('Fizz')
+        }
+        if(i % 5 === 0){
+            newArr.push("Buzz")
+        }
+        if(i % 3 === 0 && i % 5 === 0){
+            newArr.push('FizzBuzz')
+        } else {
+            
+        }
+        
+    }
+    return newArr.join(' ');
 
 }
 
-console.log(largest(2,[10,9,8,7,6,5,4,3,2,1]));
+console.log(fizzBuzz(15));
+
+// for(i = 0; i <= 20; i++){
+//     if(i % 3 == 0 && i % 5 == 0){
+//     console.log("fizzBuzz");
+//     }else if(i % 3 == 0){
+//     console.log("fizz");
+//     }else if(i % 5 == 0){
+//     console.log("buzz");
+//     }else{
+//     console.log(i);
+//     };
+    
+// };
