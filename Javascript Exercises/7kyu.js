@@ -281,28 +281,26 @@
 
 // console.log(uniqueNumbers([1,2,3,1]));
 
-function fizzBuzz(n) {
-    // Write your code here
-    const newArr = []
-    for(let i = 1; i<=n ; i++){
-        if( i % 3 === 0){
-            newArr.push('Fizz')
-        }
-        if(i % 5 === 0){
-            newArr.push("Buzz")
-        }
-        if(i % 3 === 0 && i % 5 === 0){
-            newArr.push('FizzBuzz')
-        } else {
-            
-        }
+// function fizzBuzz(n) {
+//     // Write your code here
+//     const newArr = []
+//     for(let i = 1; i<=n ; i++){
+//         if( i % 3 === 0){
+//             newArr.push('Fizz')
+//         }
+//         if(i % 5 === 0){
+//             newArr.push("Buzz")
+//         }
+//         if(i % 3 === 0 && i % 5 === 0){
+//             newArr.push('FizzBuzz')
+//         } 
         
-    }
-    return newArr.join(' ');
+//     }
+//     return newArr.join(' ');
 
-}
+// }
 
-console.log(fizzBuzz(15));
+// console.log(fizzBuzz(15));
 
 // for(i = 0; i <= 20; i++){
 //     if(i % 3 == 0 && i % 5 == 0){
@@ -316,3 +314,4 @@ console.log(fizzBuzz(15));
 //     };
     
 // };
+
