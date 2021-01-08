@@ -315,3 +315,13 @@
     
 // };
 
+function divisibleByLast(n) {
+    const newArray = [];
+    n = n.toString().split('')
+    for(let i = 0; i < n.length ; i++){
+        newArray.push((n[i] % n[i-1] === 0))
+    }
+    return newArray;
+}
+
+console.log(divisibleByLast(73312));
