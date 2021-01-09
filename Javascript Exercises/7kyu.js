@@ -327,14 +327,15 @@
 // console.log(divisibleByLast(73312));
 
 
-function uniqueNumbers(numbersArray) {
-    const newArray = [];
-    for(let i =0 ; i<numbersArray.length; i++){
-        if(!newArray.includes(numbersArray[i])){
-            newArray.push(numbersArray[i]);
-        }
-    }
-    return newArray;
-}
+// function uniqueNumbers(numbersArray) {
+//     const newArray = [];
+//     for(let i =0 ; i<numbersArray.length; i++){
+//         if(!newArray.includes(numbersArray[i])){
+//             newArray.push(numbersArray[i]);
+//         }
+//     }
+//     return newArray;
+// }
 
-console.log(uniqueNumbers([1,2,3,1]));
+// console.log(uniqueNumbers([1,2,3,1]));
+
