@@ -169,12 +169,19 @@
 
 // console.log(bonusTime(10000, true));
 
-function hero(bullets, dragons){
-    //Get Coding!
-    if(bullets / 2 === dragons || bullets / 2 === dragons){
-        return true
-    }
-    return false;
-}
+// function hero(bullets, dragons){
+//     //Get Coding!
+//     if(bullets / 2 === dragons || bullets / 2 === dragons){
+//         return true
+//     }
+//     return false;
+// }
 
-console.log(hero(10, 5));
+// console.log(hero(10, 5));
+
+const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+    return mpg / distanceToPump <= fuelLeft
+};
+
+console.log(zeroFuel(50, 25, 2));
+console.log(zeroFuel(100, 50, 1));
