@@ -339,18 +339,29 @@
 
 // console.log(uniqueNumbers([1,2,3,1]));
 
-function openOrSenior(data){
-    const arr = []
-    for(let i = 0; i< data.length; i++){
-        if(data[i][0] >= 55 && data[i][1]>= 7){
-            arr.push("Senior")
-        }
-        else {
-            arr.push('Open')
-        }
+// function openOrSenior(data){
+//     const arr = []
+//     for(let i = 0; i< data.length; i++){
+//         if(data[i][0] >= 55 && data[i][1]>= 7){
+//             arr.push("Senior")
+//         }
+//         else {
+//             arr.push('Open')
+//         }
+//     }
+//     return arr;
+
+// }
+
+// console.log(openOrSenior([[45, 12],[55,21],[19, -2],[104, 20]]));
+function maskify(cc) {
+    cc = cc.split('');
+    for(let i =0; i < cc.length-4; i++){
+        cc[i] ="#"
     }
-    return arr;
+    cc = cc.join("")
+    return cc
 
 }
 
-console.log(openOrSenior([[45, 12],[55,21],[19, -2],[104, 20]]));
+console.log(maskify('4556364607935616'));
