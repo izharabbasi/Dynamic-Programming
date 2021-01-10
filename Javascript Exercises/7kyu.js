@@ -354,14 +354,28 @@
 // }
 
 // console.log(openOrSenior([[45, 12],[55,21],[19, -2],[104, 20]]));
-function maskify(cc) {
-    cc = cc.split('');
-    for(let i =0; i < cc.length-4; i++){
-        cc[i] ="#"
-    }
-    cc = cc.join("")
-    return cc
+// function maskify(cc) {
+//     cc = cc.split('');
+//     for(let i =0; i < cc.length-4; i++){
+//         cc[i] ="#"
+//     }
+//     cc = cc.join("")
+//     return cc
 
+// }
+// console.log(maskify('4556364607935616'));
+
+function isIsogram(str){
+    str = str.split('');
+    for(let i =0 ; i < str.length; i++){
+        for(let j = i + 1 ; j < str.length ; j++){
+            if(str[i] === str[j]){
+                return false
+            }
+        }
+        }
+    
+    return true
 }
 
-console.log(maskify('4556364607935616'));
+console.log(isIsogram("aba"));
