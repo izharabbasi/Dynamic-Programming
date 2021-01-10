@@ -179,9 +179,14 @@
 
 // console.log(hero(10, 5));
 
-const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
-    return mpg / distanceToPump <= fuelLeft
-};
+function sumMix(x){
+    let add = 0;
 
-console.log(zeroFuel(50, 25, 2));
-console.log(zeroFuel(100, 50, 1));
+    x.forEach(item => {
+        let num = Number(item)
+        add += num
+    });
+    return add
+}
+
+console.log(sumMix([9, 3, '7', '3']));
