@@ -160,11 +160,21 @@
 
 // console.log(finalGrade(100, 12));
 
-function bonusTime(salary, bonus) {
-    if(bonus === true){
-        return `£${salary * 10}`
+// function bonusTime(salary, bonus) {
+//     if(bonus === true){
+//         return `£${salary * 10}`
+//     }
+//     return `£${salary}`
+// }
+
+// console.log(bonusTime(10000, true));
+
+function hero(bullets, dragons){
+    //Get Coding!
+    if(bullets / 2 === dragons || bullets / 2 === dragons){
+        return true
     }
-    return `£${salary}`
+    return false;
 }
 
-console.log(bonusTime(10000, true));
+console.log(hero(10, 5));
