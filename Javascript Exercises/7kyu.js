@@ -406,3 +406,13 @@
 // console.log(getCount("abracadabra"));
 
 
+function smaller(nums) {
+    //code me
+    const arr = [];
+    for(let i =0; i< nums.length; i++){
+            arr.push(nums[i] -1);
+    }
+    return arr;
+}
+
+console.log(smaller([5, 4, 3, 2, 1]));
