@@ -474,8 +474,19 @@
 // }
 // console.log(result);
 
-function solution(string,limit){
-    return string.substring(0,limit) + '...'
+// function solution(string,limit){
+//     return string.substring(0,limit) + '...'
+// }
+
+// console.log(solution('Testing String', 8));
+
+function digitSum (str) {
+    //Your code goes here
+    let newStr = 0;
+    for(let i =0 ;  i < str.length; i++){
+        newStr += Number(str[i]);
+    }
+    return String(newStr).substring(0,1);
 }
 
-console.log(solution('Testing String', 8));
+console.log(digitSum('2468'));
