@@ -390,17 +390,19 @@
 // console.log(minMax([1,2,3,4,5]));
 
 
-function getCount(str) {
-    var vowelsCount = 0;
-    const newString = str.split('');
+// function getCount(str) {
+//     var vowelsCount = 0;
+//     const newString = str.split('');
     
-    for (let i = 0; i <  newString.length; i++){
-        let x = newString[i];
-        if(x === 'a' | x === 'e' | x === 'i' | x === 'o' | x === 'u'){
-            vowelsCount++
-        }
-    }
-    return vowelsCount;
-}
+//     for (let i = 0; i <  newString.length; i++){
+//         let x = newString[i];
+//         if(x === 'a' | x === 'e' | x === 'i' | x === 'o' | x === 'u'){
+//             vowelsCount++
+//         }
+//     }
+//     return vowelsCount;
+// }
 
-console.log(getCount("abracadabra"));
+// console.log(getCount("abracadabra"));
+
+
