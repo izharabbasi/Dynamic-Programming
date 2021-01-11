@@ -365,17 +365,42 @@
 // }
 // console.log(maskify('4556364607935616'));
 
-function isIsogram(str){
-    str = str.split('');
-    for(let i =0 ; i < str.length; i++){
-        for(let j = i + 1 ; j < str.length ; j++){
-            if(str[i] === str[j]){
-                return false
-            }
-        }
-        }
+// function isIsogram(str){
+//     str = str.split('');
+//     for(let i =0 ; i < str.length; i++){
+//         for(let j = i + 1 ; j < str.length ; j++){
+//             if(str[i] === str[j]){
+//                 return false
+//             }
+//         }
+//         }
     
-    return true
+//     return true
+// }
+
+// console.log(isIsogram("aba"));
+
+// function minMax(arr){
+//     const array = [];
+//     array.push(Math.min(...arr))
+//     array.push(Math.max(...arr))
+//     return array;
+// }
+
+// console.log(minMax([1,2,3,4,5]));
+
+
+function getCount(str) {
+    var vowelsCount = 0;
+    const newString = str.split('');
+    
+    for (let i = 0; i <  newString.length; i++){
+        let x = newString[i];
+        if(x === 'a' | x === 'e' | x === 'i' | x === 'o' | x === 'u'){
+            vowelsCount++
+        }
+    }
+    return vowelsCount;
 }
 
-console.log(isIsogram("aba"));
+console.log(getCount("abracadabra"));
