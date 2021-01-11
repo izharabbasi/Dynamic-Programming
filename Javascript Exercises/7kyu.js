@@ -406,13 +406,31 @@
 // console.log(getCount("abracadabra"));
 
 
-function smaller(nums) {
-    //code me
-    const arr = [];
-    for(let i =0; i< nums.length; i++){
-            arr.push(nums[i] -1);
+// function smaller(nums) {
+//     //code me
+//     const arr = [];
+//     for(let i =0; i< nums.length; i++){
+//             arr.push(nums[i] -1);
+//     }
+//     return arr;
+// }
+
+// console.log(smaller([5, 4, 3, 2, 1]));
+
+function mathEngine(arr) {
+    if(arr === null){
+        return 0
     }
-    return arr;
+
+    let nSum = 0;
+    return arr.find((item) => {
+        if(item < 0){
+            nSum += item
+            return nSum
+        }
+    })
+    
 }
 
-console.log(smaller([5, 4, 3, 2, 1]));
+console.log(mathEngine([1, 2, 3, -4, -5]));
+
