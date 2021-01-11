@@ -417,20 +417,31 @@
 
 // console.log(smaller([5, 4, 3, 2, 1]));
 
-function mathEngine(arr) {
-    if(arr === null){
-        return 0
-    }
+// function mathEngine(arr) {
+//     if(arr === null){
+//         return 0
+//     }
 
-    let nSum = 0;
-    return arr.find((item) => {
-        if(item < 0){
-            nSum += item
-            return nSum
-        }
-    })
+//     let nSum = 0;
+//     return arr.find((item) => {
+//         if(item < 0){
+//             nSum += item
+//             return nSum
+//         }
+//     })
     
-}
+// }
 
-console.log(mathEngine([1, 2, 3, -4, -5]));
+// console.log(mathEngine([1, 2, 3, -4, -5]));
 
+
+function range(startNum, endNum)   {  
+    //code goes in here
+    const arr = [];
+    for(let i = startNum + 1; i< endNum; i++){
+        arr.push(i)
+    }
+    return arr;
+};  
+
+console.log(range(2,9));
