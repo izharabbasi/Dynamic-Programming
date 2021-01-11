@@ -446,19 +446,30 @@
 
 // console.log(range(2,9));
 
-function onesComplement(n) {
-    // your code here
-    n = n.toString().split('');
-    let str = ''
-    for(let i = 0; i < n.length; i++){
-        if(n[i] === "0"){
-            str += '1'
-        }
-        else {
-            str +="0"
-        }
-    }
-    return str;
-}
+// function onesComplement(n) {
+//     // your code here
+//     n = n.toString().split('');
+//     let str = ''
+//     for(let i = 0; i < n.length; i++){
+//         if(n[i] === "0"){
+//             str += '1'
+//         }
+//         else {
+//             str +="0"
+//         }
+//     }
+//     return str;
+// }
 
-console.log(onesComplement(1001));
+// console.log(onesComplement(1001));
+
+//String.fromCharCode(str.charCodeAt(0) - 1)
+
+var input = "Hello";
+var result = ""
+for(var i=0;i<input.length;i++)
+{
+    var curr = String.fromCharCode(input.charCodeAt(i)+1);
+    result = result +curr;
+}
+console.log(result);
