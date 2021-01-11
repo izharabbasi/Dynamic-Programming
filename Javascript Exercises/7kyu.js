@@ -435,13 +435,30 @@
 // console.log(mathEngine([1, 2, 3, -4, -5]));
 
 
-function range(startNum, endNum)   {  
-    //code goes in here
-    const arr = [];
-    for(let i = startNum + 1; i< endNum; i++){
-        arr.push(i)
-    }
-    return arr;
-};  
+// function range(startNum, endNum)   {  
+//     //code goes in here
+//     const arr = [];
+//     for(let i = startNum + 1; i< endNum; i++){
+//         arr.push(i)
+//     }
+//     return arr;
+// };  
 
-console.log(range(2,9));
+// console.log(range(2,9));
+
+function onesComplement(n) {
+    // your code here
+    n = n.toString().split('');
+    let str = ''
+    for(let i = 0; i < n.length; i++){
+        if(n[i] === "0"){
+            str += '1'
+        }
+        else {
+            str +="0"
+        }
+    }
+    return str;
+}
+
+console.log(onesComplement(1001));
