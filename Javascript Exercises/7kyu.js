@@ -465,11 +465,17 @@
 
 //String.fromCharCode(str.charCodeAt(0) - 1)
 
-var input = "Hello";
-var result = ""
-for(var i=0;i<input.length;i++)
-{
-    var curr = String.fromCharCode(input.charCodeAt(i)+1);
-    result = result +curr;
+// var input = "Hello";
+// var result = ""
+// for(var i=0;i<input.length;i++)
+// {
+//     var curr = String.fromCharCode(input.charCodeAt(i)+1);
+//     result = result +curr;
+// }
+// console.log(result);
+
+function solution(string,limit){
+    return string.substring(0,limit) + '...'
 }
-console.log(result);
+
+console.log(solution('Testing String', 8));
