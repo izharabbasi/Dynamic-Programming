@@ -503,18 +503,65 @@
 
 // console.log(oddOrEven([0, 1, 5]));
 
-function arithmetic(a, b, operator){
-    //your code here!
-    switch(operator){
-        case 'add':
-            return a + b;
-        case 'subtract':
-            return a - b;
-        case 'multiply':
-            return a * b;
-        case 'divide':
-            return a / b;
+// function arithmetic(a, b, operator){
+//     //your code here!
+//     switch(operator){
+//         case 'add':
+//             return a + b;
+//         case 'subtract':
+//             return a - b;
+//         case 'multiply':
+//             return a * b;
+//         case 'divide':
+//             return a / b;
+//     }
+// }
+
+// console.log(arithmetic(1, 2, "add"));
+
+// function sumDigits(number) {
+
+//     var values = String(Math.abs(number)).split("");
+//     var product = 0;
+
+//     for (var i = 0; i < values.length; i++) {
+//         product += Number(values[i]);
+//     }
+//     return product;
+    
+// }
+
+// console.log(sumDigits(-32));
+
+// function noOdds( values ){
+//     // Return all non-odd values
+//     const newArray = [];
+//     values.forEach(element => {
+//         if(element % 2 === 0){
+//             newArray.push(element)
+//         }
+//     });
+//     return newArray;
+// }
+
+// console.log(noOdds([0,1,2,3]));
+
+// function solution(nums){
+//     return nums.sort((a,b) => a - b)
+// }
+
+// console.log(solution([1, 2, 10, 50, 5]));
+
+function removeDuplicateWords (s) {
+    // your perfect code...
+    s = s.split(' ')
+    const arr = [];
+    for(let i = 0 ; i < s.length; i++){
+        if(!arr.includes(s[i])){
+            arr.push(s[i])
+        }
     }
+    return arr.join(' ');
 }
 
-console.log(arithmetic(1, 2, "add"));
+console.log(removeDuplicateWords('alpha beta beta gamma gamma gamma delta alpha beta beta gamma gamma gamma delta'));
