@@ -492,13 +492,29 @@
 // console.log(digitSum('2468'));
 
 
-function oddOrEven(array) {
-    //enter code here
-    let sum = 0;
-    for(let i=0; i< array.length; i++){
-        sum += array[i];
+// function oddOrEven(array) {
+//     //enter code here
+//     let sum = 0;
+//     for(let i=0; i< array.length; i++){
+//         sum += array[i];
+//     }
+//     return sum % 2 === 0 ? 'even' : 'odd'
+// }
+
+// console.log(oddOrEven([0, 1, 5]));
+
+function arithmetic(a, b, operator){
+    //your code here!
+    switch(operator){
+        case 'add':
+            return a + b;
+        case 'subtract':
+            return a - b;
+        case 'multiply':
+            return a * b;
+        case 'divide':
+            return a / b;
     }
-    return sum % 2 === 0 ? 'even' : 'odd'
 }
 
-console.log(oddOrEven([0, 1, 5]));
+console.log(arithmetic(1, 2, "add"));
