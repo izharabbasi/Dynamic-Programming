@@ -597,11 +597,28 @@
 // console.log(capitalize("abcdef"));
 
 
-var gimme = function (inputArray) {
-    var order = inputArray.slice().sort(function(a,b) { return a-b;});
-    console.log(order);
-    return inputArray.indexOf(order[1]);
+// var gimme = function (inputArray) {
+//     var order = inputArray.sort(function(a,b) { return a-b;});
+//     console.log(order);
+//     return inputArray.indexOf(order[2]);
 
-};
+// };
 
-console.log(gimme([2, 3, 1]));
+// console.log(gimme([2, 3, 1]));
+
+
+function minValue(values){
+    //your code here
+    const arr = []
+    let ort = values.sort((a,b) => a-b);
+    for(let i =0; i < ort.length; i++){
+        if(!arr.includes(ort[i])){
+            arr.push(ort[i])
+        }
+    }
+    let arr1 = arr.join('');
+    let results = Number(arr1);
+    return results
+}
+
+console.log(minValue([4, 7, 5, 7]));
