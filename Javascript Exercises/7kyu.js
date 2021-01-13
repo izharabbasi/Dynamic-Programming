@@ -623,9 +623,32 @@
 
 // console.log(minValue([4, 7, 5, 7]));
 
-function twoOldestAges(ages){
-    let ort = ages.sort((a,b) => b - a);
-    return [ ort[0] , ort [1] ]
+// function twoOldestAges(ages){
+//     let ort = ages.sort((a,b) => b - a);
+//     return [ ort[1] , ort [0] ]
+// }
+
+// console.log(twoOldestAges([1, 2, 10, 8]));
+
+// function sumOfMinimums(arr) {
+//     // your code here
+//     let total = 0;
+//     for(let i =0 ; i < arr.length; i++){
+//         total += Math.min(...arr[i])
+//     }
+//     return total;
+// }
+
+// console.log(sumOfMinimums([[7, 9, 8, 6, 2], [6, 3, 5, 4, 3], [5, 8, 7, 4, 5]]));
+
+function findUniq(arr) {
+    // do magic
+    let result = [];
+    for(let i = 0; i < arr.length; i++){
+        let res = arr.indexOf(arr[i]) === arr.lastIndexOf(arr[i]);
+        result.push(res)
+    }
+    console.log(result.indexOf(true));
 }
 
-console.log(twoOldestAges([1, 2, 10, 8]));
+console.log(findUniq([ 1, 1, 1, 2, 1, 1 ]));
