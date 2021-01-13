@@ -566,33 +566,42 @@
 
 // console.log(removeDuplicateWords('alpha beta beta gamma gamma gamma delta alpha beta beta gamma gamma gamma delta'));
 
-function capitalize(s){
-    let newarr1 = [];
-    let newarr2 = [];
-    s = s.split('');
-    s.filter((item, index) => {
-        if(index % 2 === 0){
-            let uItem = item.toUpperCase();
-            newarr1.push(uItem)
-        } else {
-            newarr1.push(item)
-        }
-    })
+// function capitalize(s){
+//     let newarr1 = [];
+//     let newarr2 = [];
+//     s = s.split('');
+//     s.filter((item, index) => {
+//         if(index % 2 === 0){
+//             let uItem = item.toUpperCase();
+//             newarr1.push(uItem)
+//         } else {
+//             newarr1.push(item)
+//         }
+//     })
 
-    s.filter((item, index) => {
-        if(index % 2 !== 0){
-            let uItem = item.toUpperCase();
-            newarr2.push(uItem)
-        } else {
-            newarr2.push(item)
-        }
+//     s.filter((item, index) => {
+//         if(index % 2 !== 0){
+//             let uItem = item.toUpperCase();
+//             newarr2.push(uItem)
+//         } else {
+//             newarr2.push(item)
+//         }
         
-    })
-    let aa = newarr1.join('');
-    let bb = newarr2.join('');
+//     })
+//     let aa = newarr1.join('');
+//     let bb = newarr2.join('');
 
-    return [aa, bb]
+//     return [aa, bb]
+// };
+
+// console.log(capitalize("abcdef"));
+
+
+var gimme = function (inputArray) {
+    var order = inputArray.slice().sort(function(a,b) { return a-b;});
+    console.log(order);
+    return inputArray.indexOf(order[1]);
+
 };
 
-console.log(capitalize("abcdef"));
-
+console.log(gimme([2, 3, 1]));
