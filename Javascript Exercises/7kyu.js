@@ -566,19 +566,33 @@
 
 // console.log(removeDuplicateWords('alpha beta beta gamma gamma gamma delta alpha beta beta gamma gamma gamma delta'));
 
-// function capitalize(s){
-//     let newStr = '';
-//     s = s.split('');
-//     s.filter((item, index) => {
-//         if(index % 2 === 0){
-//             let uItem = item.toUpperCase();
-//             newStr += uItem;
-//         } else {
-//             newStr += item
-//         }
-        
-//     })
-//     return newStr;
-// };
+function capitalize(s){
+    let newarr1 = [];
+    let newarr2 = [];
+    s = s.split('');
+    s.filter((item, index) => {
+        if(index % 2 === 0){
+            let uItem = item.toUpperCase();
+            newarr1.push(uItem)
+        } else {
+            newarr1.push(item)
+        }
+    })
 
-// console.log(capitalize("abcdef"));
+    s.filter((item, index) => {
+        if(index % 2 !== 0){
+            let uItem = item.toUpperCase();
+            newarr2.push(uItem)
+        } else {
+            newarr2.push(item)
+        }
+        
+    })
+    let aa = newarr1.join('');
+    let bb = newarr2.join('');
+
+    return [aa, bb]
+};
+
+console.log(capitalize("abcdef"));
+
