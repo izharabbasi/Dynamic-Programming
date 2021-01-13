@@ -607,18 +607,25 @@
 // console.log(gimme([2, 3, 1]));
 
 
-function minValue(values){
-    //your code here
-    const arr = []
-    let ort = values.sort((a,b) => a-b);
-    for(let i =0; i < ort.length; i++){
-        if(!arr.includes(ort[i])){
-            arr.push(ort[i])
-        }
-    }
-    let arr1 = arr.join('');
-    let results = Number(arr1);
-    return results
+// function minValue(values){
+//     //your code here
+//     const arr = []
+//     let ort = values.sort((a,b) => a-b);
+//     for(let i =0; i < ort.length; i++){
+//         if(!arr.includes(ort[i])){
+//             arr.push(ort[i])
+//         }
+//     }
+//     let arr1 = arr.join('');
+//     let results = Number(arr1);
+//     return results
+// }
+
+// console.log(minValue([4, 7, 5, 7]));
+
+function twoOldestAges(ages){
+    let ort = ages.sort((a,b) => b - a);
+    return [ ort[0] , ort [1] ]
 }
 
-console.log(minValue([4, 7, 5, 7]));
+console.log(twoOldestAges([1, 2, 10, 8]));
