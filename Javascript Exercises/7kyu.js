@@ -552,16 +552,33 @@
 
 // console.log(solution([1, 2, 10, 50, 5]));
 
-function removeDuplicateWords (s) {
-    // your perfect code...
-    s = s.split(' ')
-    const arr = [];
-    for(let i = 0 ; i < s.length; i++){
-        if(!arr.includes(s[i])){
-            arr.push(s[i])
-        }
-    }
-    return arr.join(' ');
-}
+// function removeDuplicateWords (s) {
+//     // your perfect code...
+//     s = s.split(' ')
+//     const arr = [];
+//     for(let i = 0 ; i < s.length; i++){
+//         if(!arr.includes(s[i])){
+//             arr.push(s[i])
+//         }
+//     }
+//     return arr.join(' ');
+// }
 
-console.log(removeDuplicateWords('alpha beta beta gamma gamma gamma delta alpha beta beta gamma gamma gamma delta'));
+// console.log(removeDuplicateWords('alpha beta beta gamma gamma gamma delta alpha beta beta gamma gamma gamma delta'));
+
+// function capitalize(s){
+//     let newStr = '';
+//     s = s.split('');
+//     s.filter((item, index) => {
+//         if(index % 2 === 0){
+//             let uItem = item.toUpperCase();
+//             newStr += uItem;
+//         } else {
+//             newStr += item
+//         }
+        
+//     })
+//     return newStr;
+// };
+
+// console.log(capitalize("abcdef"));
