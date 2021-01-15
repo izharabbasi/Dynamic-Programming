@@ -673,17 +673,30 @@
 
 // console.log(dontGiveMeFive(4,17));
 
+// const sequenceSum = (begin, end, step) => {
+//     // May the Force be with you
+//     let res = 0;
+//     if( begin > end){
+//         return 0
+//     }
+//     for(let i = begin; i <= end; i+=step){
+//         res += i
+//     }
+//     return res;
+// };
 
-const sequenceSum = (begin, end, step) => {
-    // May the Force be with you
-    let res = 0;
-    if( begin > end){
-        return 0
+// console.log(sequenceSum(2, 6, 2));
+
+function capitalize(s,arr){
+    s = s.split('');
+    for(let i = 0; i < s.length; i++){
+        for(let j =0; j < arr.length; j++){
+            if(i === arr[j]){
+                s[i] = s[i].toUpperCase();
+            }
+        }
     }
-    for(let i = begin; i <= end; i+=step){
-        res += i
-    }
-    return res;
+    return s.join('')
 };
 
-console.log(sequenceSum(2, 6, 2));
+console.log(capitalize("abcdef",[1,2,5]));
