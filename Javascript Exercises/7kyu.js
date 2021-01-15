@@ -661,14 +661,29 @@
 
 // console.log(findUniq([ 1, 1, 1, 2, 1, 1 ]));
 
-function dontGiveMeFive(start, end){
-    const res = [];
-    for(let i = start; i <= end; i++){
-        if(!i.toString().includes('5')){
-            res.push(i)
-        }
+// function dontGiveMeFive(start, end){
+//     const res = [];
+//     for(let i = start; i <= end; i++){
+//         if(!i.toString().includes('5')){
+//             res.push(i)
+//         }
+//     }
+//     return res;
+// }
+
+// console.log(dontGiveMeFive(4,17));
+
+
+const sequenceSum = (begin, end, step) => {
+    // May the Force be with you
+    let res = 0;
+    if( begin > end){
+        return 0
+    }
+    for(let i = begin; i <= end; i+=step){
+        res += i
     }
     return res;
-}
+};
 
-console.log(dontGiveMeFive(4,17));
+console.log(sequenceSum(2, 6, 2));
