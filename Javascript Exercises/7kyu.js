@@ -687,16 +687,29 @@
 
 // console.log(sequenceSum(2, 6, 2));
 
-function capitalize(s,arr){
-    s = s.split('');
-    for(let i = 0; i < s.length; i++){
-        for(let j =0; j < arr.length; j++){
-            if(i === arr[j]){
-                s[i] = s[i].toUpperCase();
-            }
-        }
-    }
-    return s.join('')
-};
+// function capitalize(s,arr){
+//     s = s.split('');
+//     for(let i = 0; i < s.length; i++){
+//         for(let j =0; j < arr.length; j++){
+//             if(i === arr[j]){
+//                 s[i] = s[i].toUpperCase();
+//             }
+//         }
+//     }
+//     return s.join('')
+// };
 
-console.log(capitalize("abcdef",[1,2,5]));
+// console.log(capitalize("abcdef",[1,2,5]));
+
+// function solve(arr){
+//     //..
+//     const array = [];
+//     for(let i =0; i < arr.length; i++){
+//         if(!array.includes(arr[i])){
+//             array.push(arr[i])
+//         }
+//     }
+//     return array
+// }
+
+// console.log(solve([3,4,4,3,6,3]));
