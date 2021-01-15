@@ -714,9 +714,27 @@
 
 // console.log(solve([3,4,4,3,6,3]));
 
-function flattenAndSort(array) {
-    // Good luck, brave code warrior
-    return [].concat(...array).sort((a,b) => a - b)
+// function flattenAndSort(array) {
+//     // Good luck, brave code warrior
+//     return [].concat(...array).sort((a,b) => a - b)
+// }
+
+// console.log(flattenAndSort([[3, 2, 1], [7, 9, 8], [6, 4, 5]]));
+
+function rowWeights(array){
+    //your code here
+    let res1 = 0;
+    let res2 = 0;
+    for(let i = 0 ; i < array.length; i++){
+        if(i % 2 === 0){
+            res1 += array[i];
+        } else if ((i % 2 !== 0)) {
+            res2 += array[i];
+        }
+    }
+    const newArray = [res1, res2];
+    return newArray;
 }
 
-console.log(flattenAndSort([[3, 2, 1], [7, 9, 8], [6, 4, 5]]));
+console.log(rowWeights([100,51,50,100]));
+
