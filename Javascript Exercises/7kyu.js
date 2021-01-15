@@ -713,3 +713,16 @@
 // }
 
 // console.log(solve([3,4,4,3,6,3]));
+
+function flattenAndSort(array) {
+    // Good luck, brave code warrior!
+    const newArray = []
+    for(let i =0 ; i< array.length; i++ ){
+        newArray.push(array[i].sort())
+    }
+    let sort = newArray.sort();
+
+    return [].concat(...sort).sort((a,b) => a - b)
+}
+
+console.log(flattenAndSort([[3, 2, 1], [7, 9, 8], [6, 4, 5]]));
