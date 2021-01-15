@@ -641,14 +641,34 @@
 
 // console.log(sumOfMinimums([[7, 9, 8, 6, 2], [6, 3, 5, 4, 3], [5, 8, 7, 4, 5]]));
 
-function findUniq(arr) {
-    // do magic
-    let result = [];
-    for(let i = 0; i < arr.length; i++){
-        let res = arr.indexOf(arr[i]) === arr.lastIndexOf(arr[i]);
-        result.push(res)
+// function findUniq(arr) {
+//     // do magic
+//     let result = [];
+//     for(let i = 0; i < arr.length; i++){
+//         let res = arr.indexOf(arr[i]) === arr.lastIndexOf(arr[i]);
+//         result.push(res)
+//     }
+//     console.log(result.indexOf(true));
+// }
+
+// console.log(findUniq([ 1, 1, 1, 2, 1, 1 ]));
+
+// function findUniq(arr) {
+//     return arr.filter(l => {
+//         return arr.indexOf(l) === arr.lastIndexOf(l)
+//     })[0]
+// }
+
+// console.log(findUniq([ 1, 1, 1, 2, 1, 1 ]));
+
+function dontGiveMeFive(start, end){
+    const res = [];
+    for(let i = start; i <= end; i++){
+        if(!i.toString().includes('5')){
+            res.push(i)
+        }
     }
-    console.log(result.indexOf(true));
+    return res;
 }
 
-console.log(findUniq([ 1, 1, 1, 2, 1, 1 ]));
+console.log(dontGiveMeFive(4,17));
