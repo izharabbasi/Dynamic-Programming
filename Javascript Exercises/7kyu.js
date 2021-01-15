@@ -721,20 +721,34 @@
 
 // console.log(flattenAndSort([[3, 2, 1], [7, 9, 8], [6, 4, 5]]));
 
-function rowWeights(array){
+// function rowWeights(array){
+//     //your code here
+//     let res1 = 0;
+//     let res2 = 0;
+//     for(let i = 0 ; i < array.length; i++){
+//         if(i % 2 === 0){
+//             res1 += array[i];
+//         } else if ((i % 2 !== 0)) {
+//             res2 += array[i];
+//         }
+//     }
+//     const newArray = [res1, res2];
+//     return newArray;
+// }
+
+// console.log(rowWeights([100,51,50,100]));
+
+function maxNumber(n){
     //your code here
-    let res1 = 0;
-    let res2 = 0;
-    for(let i = 0 ; i < array.length; i++){
-        if(i % 2 === 0){
-            res1 += array[i];
-        } else if ((i % 2 !== 0)) {
-            res2 += array[i];
-        }
+    n = n.toString().split('');
+    const res = n.sort((a,b) => b -a );
+
+    const arr = []
+    for(let i =0; i < res.length; i++){
+        arr.push(Number(res[i]))
     }
-    const newArray = [res1, res2];
-    return newArray;
+    let result = arr.join('');
+    return Number(result)
 }
 
-console.log(rowWeights([100,51,50,100]));
-
+console.log(maxNumber(213));
