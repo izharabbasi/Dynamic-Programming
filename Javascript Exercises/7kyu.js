@@ -754,14 +754,27 @@
 // console.log(maxNumber(213));
 
 
-function reverseWords(str) {
-    // Go for it
-    var rev = '';
-    for(let i = str.length - 1; i  >= 0 ; i--){
-        rev += str[i]
+// function reverseWords(str) {
+//     // Go for it
+//     var rev = '';
+//     for(let i = str.length - 1; i  >= 0 ; i--){
+//         rev += str[i]
+//     }
+//     return rev.split(" ").reverse().join(' ')
+// }
+
+
+// console.log(reverseWords('double  spaced  words'));
+
+function dontGiveMeFive(start, end){
+    let res = [];
+    for(let i = start; i <= end; i++){
+        if(!i.toString().split('').includes('5')){
+            res.push(i)
+        }
     }
-    return rev.split(" ").reverse().join(' ')
+    return res.length
 }
 
 
-console.log(reverseWords('double  spaced  words'));
+console.log(dontGiveMeFive(4,17));
