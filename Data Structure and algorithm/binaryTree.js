@@ -13,7 +13,7 @@ class BinarySearchTree {
         this.root = null;
     }
     insert(value){
-
+        
     }
     lookup(value){
 
