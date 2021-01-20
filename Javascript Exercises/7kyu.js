@@ -738,18 +738,30 @@
 
 // console.log(rowWeights([100,51,50,100]));
 
-function maxNumber(n){
-    //your code here
-    n = n.toString().split('');
-    const res = n.sort((a,b) => b -a );
+// function maxNumber(n){
+//     //your code here
+//     n = n.toString().split('');
+//     const res = n.sort((a,b) => b -a );
 
-    const arr = []
-    for(let i =0; i < res.length; i++){
-        arr.push(Number(res[i]))
+//     const arr = []
+//     for(let i =0; i < res.length; i++){
+//         arr.push(Number(res[i]))
+//     }
+//     let result = arr.join('');
+//     return Number(result)
+// }
+
+// console.log(maxNumber(213));
+
+
+function reverseWords(str) {
+    // Go for it
+    var rev = '';
+    for(let i = str.length - 1; i  >= 0 ; i--){
+        rev += str[i]
     }
-    let result = arr.join('');
-    return Number(result)
+    return rev.split(" ").reverse().join(' ')
 }
 
-console.log(maxNumber(213));
 
+console.log(reverseWords('double  spaced  words'));
