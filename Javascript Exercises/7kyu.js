@@ -799,18 +799,32 @@
 
 // console.log(inAscOrder([1,6,10,18,2,4,20]));
 
-function isSortedAndHow(array) {
-    for(let i =0; i < array.length; i++){
-        if(array[i] < array[i + 1]){
-            return "yes, ascending"
-        }
-        else if (array[i] > array[i + 1]){
-            return "yes, descending"
-        } 
-        else if(array[i] > array[i + 2] || array[i] < array[i + 2]) {
-            return "no"
+// function isSortedAndHow(array) {
+//     for(let i =0; i < array.length; i++){
+//         if(array[i] < array[i + 1]){
+//             return "yes, ascending"
+//         }
+//         else if (array[i] > array[i + 1]){
+//             return "yes, descending"
+//         } 
+//         else if(array[i] > array[i + 2] || array[i] < array[i + 2]) {
+//             return "no"
+//         }
+//     }
+// }
+
+// console.log(isSortedAndHow([1, 2]));
+
+function numberOfOccurrences(q){
+    var arr = [0, 1, 2, 2, 3]
+    let count = 0;
+    for (let i =0; i < arr.length; i++){
+        if(arr[i] === q){
+            count++
         }
     }
+    return count
+
 }
 
-console.log(isSortedAndHow([1, 2]));
+console.log(numberOfOccurrences(4));
