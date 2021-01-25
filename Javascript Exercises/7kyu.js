@@ -766,15 +766,40 @@
 
 // console.log(reverseWords('double  spaced  words'));
 
-function dontGiveMeFive(start, end){
-    let res = [];
-    for(let i = start; i <= end; i++){
-        if(!i.toString().split('').includes('5')){
-            res.push(i)
-        }
-    }
-    return res.length
+// function dontGiveMeFive(start, end){
+//     let res = [];
+//     for(let i = start; i <= end; i++){
+//         if(!i.toString().split('').includes('5')){
+//             res.push(i)
+//         }
+//     }
+//     return res.length
+// }
+
+
+// console.log(dontGiveMeFive(4,17));
+
+// function sortByLength (array) {
+//     // Return an array containing the same strings, ordered from shortest to longest
+//     return array.sort((a,b) => a.length - b.length);
+// }
+
+// console.log(sortByLength(["Beg", "Life", "I", "To"]));
+
+
+// function inAscOrder(arr) {
+//     // Code your algorithm here :)
+//     for(let i =0; i < arr.length; i++){
+//         if(arr[i] > arr[i + 1]){
+//             return false
+//         }
+//     }
+//     return true
+// }
+
+// console.log(inAscOrder([1,6,10,18,2,4,20]));
+
+function isSortedAndHow(array) {
 }
 
-
-console.log(dontGiveMeFive(4,17));
+console.log(isSortedAndHow([1, 2]));
