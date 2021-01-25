@@ -800,6 +800,17 @@
 // console.log(inAscOrder([1,6,10,18,2,4,20]));
 
 function isSortedAndHow(array) {
+    for(let i =0; i < array.length; i++){
+        if(array[i] < array[i + 1]){
+            return "yes, ascending"
+        }
+        else if (array[i] > array[i + 1]){
+            return "yes, descending"
+        } 
+        else if(array[i] > array[i + 2] || array[i] < array[i + 2]) {
+            return "no"
+        }
+    }
 }
 
 console.log(isSortedAndHow([1, 2]));
