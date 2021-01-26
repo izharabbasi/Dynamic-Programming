@@ -830,13 +830,13 @@
 // console.log(numberOfOccurrences(4));
 
 function repeats(arr){
-    const array = [];
-    for(let i =0; i< arr.length; i++){
-        if(!array.includes(arr[i])){
-            array.push(arr[i]);
-        }
+    let n = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr.filter((v) => v == arr[i]).length != 2) {
+      n.push(arr[i]);
     }
-    console.log(array);
+  }
+  return n[0]+n[1]
 }
 
 console.log(repeats([4,5,7,5,4,8]));
