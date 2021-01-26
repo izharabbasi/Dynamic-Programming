@@ -829,14 +829,14 @@
 
 // console.log(numberOfOccurrences(4));
 
-function repeats(arr){
-    let n = [];
-  for (let i = 0; i < arr.length; i++) {
-    if (arr.filter((v) => v == arr[i]).length != 2) {
-      n.push(arr[i]);
-    }
-  }
-  return n[0]+n[1]
-}
+// function repeats(arr){
+//     let n = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr.filter((v) => v == arr[i]).length != 2) {
+//       n.push(arr[i]);
+//     }
+//   }
+//   return n[0]+n[1]
+// }
 
-console.log(repeats([4,5,7,5,4,8]));
+// console.log(repeats([4,5,7,5,4,8]));
