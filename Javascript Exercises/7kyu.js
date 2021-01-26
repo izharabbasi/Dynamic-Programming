@@ -815,16 +815,28 @@
 
 // console.log(isSortedAndHow([1, 2]));
 
-function numberOfOccurrences(q){
-    var arr = [0, 1, 2, 2, 3]
-    let count = 0;
-    for (let i =0; i < arr.length; i++){
-        if(arr[i] === q){
-            count++
+// function numberOfOccurrences(q){
+//     var arr = [0, 1, 2, 2, 3]
+//     let count = 0;
+//     for (let i =0; i < arr.length; i++){
+//         if(arr[i] === q){
+//             count++
+//         }
+//     }
+//     return count
+
+// }
+
+// console.log(numberOfOccurrences(4));
+
+function repeats(arr){
+    const array = [];
+    for(let i =0; i< arr.length; i++){
+        if(!array.includes(arr[i])){
+            array.push(arr[i]);
         }
     }
-    return count
-
+    console.log(array);
 }
 
-console.log(numberOfOccurrences(4));
+console.log(repeats([4,5,7,5,4,8]));
